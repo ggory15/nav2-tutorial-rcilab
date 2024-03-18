@@ -1,0 +1,11 @@
+# bashrc
+
+export GAZEBO_MODEL_PATH=:/opt/ros/humble/share/turtlebot3_gazebo/models:${your_root}/neo_ws/src/neo_simulation2/models:$GAZEBO_MODEL_PATH
+export MY_ROBOT=mpo_500
+export MAP_NAME=neo_workshop
+
+
+#launch
+[Terminal 1] ros2 launch neo_simulation2 simulation.launch.py
+[Terminal 2] ros2 launch neo_simulation2 navigation.launch.py
+[Terminal 3] ros2 launch neo_nav2_bringup rviz_launch.py 
